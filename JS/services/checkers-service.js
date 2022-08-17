@@ -24,7 +24,7 @@ function setChekersBoard(moveFrom,moveTo){
             if(((moveTo.row === 0 && chekersGame.isWhiteTurn)|| (moveTo.row === 7 && !chekersGame.isWhiteTurn)) && !gBoard[moveFrom.row][moveFrom.column].isKing){
                 piecePromotion(gBoard[moveFrom.row][moveFrom.column]);
             }
-            const length = burnedPieces.length;
+            const length = burnedPieces.length;``
             if(length>0){
                 for(let i=0;i<length;i++){
                     if(gBoard[burnedPieces[i].row][burnedPieces[i].column].isWhite){
