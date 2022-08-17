@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Passion One', cursive;;
+}
+.header{
+    width: 100vw;
+    height: 10vh;
+    display:flex;
+}
+.text-header{
+    width: 80vw;
+    font-size: 90px;
+    color: #A15E49;
+    text-align: center;
+    background-image: url(https://d3hp2os08tb528.cloudfront.net/checkers/images/lightwood.png);
+}
+
+.main-section{
+    width: 100vw;
+    min-height: 90vh;
+    background-image: url(https://d3hp2os08tb528.cloudfront.net/checkers/images/lightwood.png);
+    display:flex;
+    flex-direction:row;
+}
+
+.side-bar{
+    width: 10vw;
+    background-image: url(https://d3hp2os08tb528.cloudfront.net/checkers/images/darkwood.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-content{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkers-board{
+    width:80vh;
+    height: 80vh;
+    outline: 5px solid #A15E49 ;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+}
+
+.cell{
+    width :10vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-cell{
+    background-image: url(https://d3hp2os08tb528.cloudfront.net/checkers/images/lightwood.png);
+}
+
+.black-cell{
+    background-image: url(https://d3hp2os08tb528.cloudfront.net/checkers/images/darkwood.png);
+}
+
+.piece{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.white-piece{
+    background-color:whitesmoke;
+    border: 10px solid lightgray;
+}
+
+.black-piece{
+    background-color:rgb(35, 35, 35);
+    border:10px solid rgb(26, 26, 26);
+}
+
+.picked-piece{
+    border:10px solid rgb(134, 1, 1);
+}
+
+.crown-img{
+    background-image: url('https://www.svgrepo.com/show/248030/crown.svg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn{
+    background-image: url(https://d3hp2os08tb528.cloudfront.net/checkers/images/lightwood.png);
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #A15E49;
+    box-shadow:  5px 5px 15px 5px #000000;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(192, 192, 192, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__box {
+    width: 30%;
+    height: 50%;
+    padding: 1rem;
+    background: white;
+    border: 3px solid #A15E49 ;
+    border-radius: 5px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modalBtns{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    font-size: 2rem;
+}
+
+.modalHeader{
+    width: 100%;
+    height: 30%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.btnModal{
+    width: 30%;
+    height: 30%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px){
+    .checkers-board{
+        width:64vh;
+        height: 64vh;
+    }
+    .cell{
+        width :8vh;
+        height: 8vh;
+    }
+    .btn{
+        width :8vh;
+        height: 8vh; 
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .btn{
+        width :7vh;
+        height: 7vh; 
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .checkers-board{
+        width:56vh;
+        height: 56vh;
+    }
+    .cell{
+        width :7vh;
+        height: 7vh;
+    }
+    .btn{
+        width :6vh;
+        height: 6vh; 
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .checkers-board{
+        width:48vh;
+        height: 48vh;
+    }
+    .cell{
+        width :6vh;
+        height: 6vh;
+    }
+    .btn{
+        width :5vh;
+        height: 5vh; 
+        font-size: 1.2rem;
+    }
+    .text-header{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 570px){
+    .checkers-board{
+        width:40vh;
+        height: 40vh;
+    }
+    .cell{
+        width :5vh;
+        height: 5vh;
+    }
+    .btn{
+        width :4vh;
+        height: 4vh; 
+        font-size: 1rem;
+    }
+    .text-header{
+        font-size: 70px;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    .checkers-board{
+        width:32vh;
+        height: 32vh;
+    }
+    .cell{
+        width :4vh;
+        height: 4vh;
+    }
+    .btn{
+        width :3vh;
+        height: 3vh; 
+        font-size: 0.7rem;
+    }
+    .text-header{
+        font-size: 60px;
+    }
+
+}
+
+
